@@ -4,34 +4,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".TableActivity">
 
     <TextView
-        android:id="@+id/main_restaurant"
+        android:id="@+id/table_restaurant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <TextView
-        android:id="@+id/main_table"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:id="@+id/main_button_waiter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ask for Waiter" />
+        android:text="Choisissez votre table" />
+
+    <EditText
+        android:id="@+id/table_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" />
 
     <Button
-        android:id="@+id/main_button_command"
+        android:id="@+id/table_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Command" />
-
-    <Button
-        android:id="@+id/main_button_bill"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bill" />
+        android:text="Submit" />
 
 </LinearLayout>
