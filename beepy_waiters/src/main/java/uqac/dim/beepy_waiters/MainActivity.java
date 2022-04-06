@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
 
     private final FirebaseFirestore firestore = FirebaseFirestore.getInstance();
 
+    private Restaurant restaurant;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         if(!checkRestaurantExtra()) return;
 
-        Restaurant restaurant = getIntent().getExtras().getParcelable(Restaurant.RESTAURANT_EXTRA);
+        restaurant = getIntent().getExtras().getParcelable(Restaurant.RESTAURANT_EXTRA);
 
         firestore.collection(FirestoreKeys.RESTAURANTS_COLLECTION).document(restaurant.getId())
                 .collection(FirestoreKeys.TABLES_COLLECTION)
@@ -45,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
                         for (Table table : tables) {
                             Button button = new Button(this);
                             button.setText(table.getName() + " : " + table.isCalled());
+                            button.setOnClickListener(v -> onTableSelected(table));
                             layout.addView(button);
                             Log.i("Beepy", String.valueOf(table));
                         }
@@ -64,5 +67,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return true;
+    }
+
+    private void onTableSelected(Table table) {
+        Intent intent = new Intent(MainActivity.this, TableActivity.class);
+        intent.putExtra(Restaurant.RESTAURANT_EXTRA, restaurant);
+        intent.putExtra(Table.TABLE_EXTRA, table);
+        startActivity(intent);
     }
 }
