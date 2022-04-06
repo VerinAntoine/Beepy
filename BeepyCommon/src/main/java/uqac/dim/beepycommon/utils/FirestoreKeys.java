@@ -1,4 +1,4 @@
-package uqac.dim.beepy_waiters.utils;
+package uqac.dim.beepycommon.utils;
 
 public class FirestoreKeys {
 

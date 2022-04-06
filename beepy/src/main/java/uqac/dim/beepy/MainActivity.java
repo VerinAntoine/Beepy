@@ -11,9 +11,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import uqac.dim.beepy.model.Restaurant;
-import uqac.dim.beepy.model.Table;
-import uqac.dim.beepy.utils.FirestoreKeys;
+import uqac.dim.beepycommon.models.Restaurant;
+import uqac.dim.beepycommon.models.Table;
+import uqac.dim.beepycommon.utils.FirestoreKeys;
 
 public class MainActivity extends AppCompatActivity {
 

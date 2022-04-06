@@ -1,4 +1,4 @@
-package uqac.dim.beepy_waiters.model;
+package uqac.dim.beepycommon.models;
 
 import android.os.Parcel;
 import android.os.Parcelable;

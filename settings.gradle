@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "Beepy"
 include ':beepy_waiters'
 include ':beepy'
+include ':BeepyCommon'

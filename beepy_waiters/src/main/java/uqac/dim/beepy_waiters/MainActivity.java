@@ -13,9 +13,9 @@ import com.google.firebase.firestore.Query;
 
 import java.util.List;
 
-import uqac.dim.beepy_waiters.model.Restaurant;
-import uqac.dim.beepy_waiters.model.Table;
-import uqac.dim.beepy_waiters.utils.FirestoreKeys;
+import uqac.dim.beepycommon.models.Restaurant;
+import uqac.dim.beepycommon.models.Table;
+import uqac.dim.beepycommon.utils.FirestoreKeys;
 
 public class MainActivity extends AppCompatActivity {
 

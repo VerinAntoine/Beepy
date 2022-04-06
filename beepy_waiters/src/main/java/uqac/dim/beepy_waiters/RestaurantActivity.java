@@ -11,8 +11,8 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import uqac.dim.beepy_waiters.model.Restaurant;
-import uqac.dim.beepy_waiters.utils.FirestoreKeys;
+import uqac.dim.beepycommon.models.Restaurant;
+import uqac.dim.beepycommon.utils.FirestoreKeys;
 
 public class RestaurantActivity extends AppCompatActivity {
 
