@@ -1,10 +1,13 @@
 package uqac.dim.beepy_waiters;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Button;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -45,11 +48,13 @@ public class MainActivity extends AppCompatActivity {
                         Log.d("BeepyD", String.valueOf(tables.size()));
 
                         for (Table table : tables) {
-                            Button button = new Button(this);
-                            button.setText(table.getName() + " : " + table.isCalled());
-                            button.setOnClickListener(v -> onTableSelected(table));
-                            layout.addView(button);
-                            Log.i("Beepy", String.valueOf(table));
+                            LayoutInflater inflater = LayoutInflater.from(getApplicationContext());
+                            @SuppressLint("InflateParams") View view = inflater.inflate(R.layout.table_element, null, false);
+
+                            ((TextView) view.findViewById(R.id.table_name)).setText(table.getName());
+                            view.findViewById(R.id.table_select).setOnClickListener(v -> onTableSelected(table));
+
+                            layout.addView(view);
                         }
                     }
 
