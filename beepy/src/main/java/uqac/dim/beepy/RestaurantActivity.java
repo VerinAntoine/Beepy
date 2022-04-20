@@ -24,6 +24,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.Task;
 import com.google.android.gms.tasks.Tasks;
@@ -73,6 +74,7 @@ public class RestaurantActivity extends AppCompatActivity implements OnMapReadyC
 
         checkPermissionLocation();
 
+        map.setMapStyle(MapStyleOptions.loadRawResourceStyle(getApplicationContext(), R.raw.map_style));
         map.setOnMapClickListener(latLng -> {
             selectedRestaurant = null;
             findViewById(R.id.restaurant_select).setVisibility(View.INVISIBLE);
