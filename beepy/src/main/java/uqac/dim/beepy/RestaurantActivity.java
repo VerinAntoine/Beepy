@@ -37,7 +37,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import uqac.dim.beepycommon.models.Restaurant;
-import uqac.dim.beepycommon.models.Table;
 import uqac.dim.beepycommon.utils.FirestoreKeys;
 
 public class RestaurantActivity extends AppCompatActivity implements OnMapReadyCallback {
