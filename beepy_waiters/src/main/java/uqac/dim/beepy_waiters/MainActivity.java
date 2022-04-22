@@ -45,10 +45,9 @@ public class MainActivity extends AppCompatActivity {
 
                     if(value != null && !value.isEmpty()) {
                         List<Table> tables = value.toObjects(Table.class);
-                        Log.d("BeepyD", String.valueOf(tables.size()));
 
+                        LayoutInflater inflater = LayoutInflater.from(getApplicationContext());
                         for (Table table : tables) {
-                            LayoutInflater inflater = LayoutInflater.from(getApplicationContext());
                             @SuppressLint("InflateParams") View view = inflater.inflate(R.layout.table_element, null, false);
 
                             ((TextView) view.findViewById(R.id.table_name)).setText(table.getName());
