@@ -16,17 +16,10 @@
         android:layout_height="wrap_content"
         android:text="Choisissez votre table" />
 
-    <EditText
-        android:id="@+id/table_input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text" />
-
-    <Button
-        android:id="@+id/table_submit"
+    <LinearLayout
+        android:id="@+id/table_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit" />
+        android:orientation="vertical" />
 
 </LinearLayout>
