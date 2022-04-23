@@ -184,7 +184,7 @@ public class RestaurantActivity extends AppCompatActivity implements OnMapReadyC
     }
 
     private void onSubmit(View v) {
-        Intent intent = new Intent(RestaurantActivity.this, TableActivity.class);
+        Intent intent = new Intent(RestaurantActivity.this, MainActivity.class);
         intent.putExtra(Restaurant.RESTAURANT_EXTRA, selectedRestaurant);
         startActivity(intent);
     }
