@@ -15,14 +15,20 @@ public class Restaurant implements Parcelable {
 
     public Restaurant() { }
 
-    public Restaurant(String id, String name) {
+    public Restaurant(String id, String name, double latitude, double longitude, String geohash) {
         this.id = id;
         this.name = name;
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.geohash = geohash;
     }
 
     protected Restaurant(Parcel in) {
         id = in.readString();
         name = in.readString();
+        latitude = in.readDouble();
+        longitude = in.readDouble();
+        geohash = in.readString();
     }
 
     public String getId() {
@@ -86,5 +92,8 @@ public class Restaurant implements Parcelable {
     public void writeToParcel(Parcel parcel, int i) {
         parcel.writeString(id);
         parcel.writeString(name);
+        parcel.writeDouble(longitude);
+        parcel.writeDouble(latitude);
+        parcel.writeString(geohash);
     }
 }

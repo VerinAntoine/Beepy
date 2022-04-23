@@ -16,14 +16,18 @@ public class Table implements Parcelable {
 
     public Table() { }
 
-    public Table(String id, String name) {
+    public Table(String id, String name, boolean called, Timestamp callTime) {
         this.id = id;
         this.name = name;
+        this.called = called;
+        this.callTime = callTime;
     }
 
     protected Table(Parcel in) {
         id = in.readString();
         name = in.readString();
+        called = in.readBoolean();
+        callTime = in.readParcelable(Timestamp.class.getClassLoader());
     }
 
     public String getId() {
@@ -89,5 +93,7 @@ public class Table implements Parcelable {
     public void writeToParcel(Parcel parcel, int i) {
         parcel.writeString(id);
         parcel.writeString(name);
+        parcel.writeBoolean(called);
+        parcel.writeParcelable(callTime, 0);
     }
 }
