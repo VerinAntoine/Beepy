@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:maxHeight="@android:dimen/app_icon_size"
+        android:src="@mipmap/food_icon_foreground"
+        android:layout_weight="2"
+        android:contentDescription="Useless but beautiful icon of a fork and a knife" />
+
+    <TextView
+        android:id="@+id/food_order_name"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textColor="@color/teal_200"
+        android:textSize="20sp"
+        android:text="Nom du plat"
+        android:layout_weight="70"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/food_order_price"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textColor="@color/teal_200"
+        android:textSize="20sp"
+        android:text="Prix"
+        android:layout_weight="28"
+        android:gravity="center" />
+
+    <ImageButton
+        android:id="@+id/food_order_delete_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/food_order_delete_icon_foreground"
+        android:contentDescription="Remove the order from the bill" />
+
+</LinearLayout>
