@@ -1,7 +1,13 @@
 <resources>
-    <string name="app_name">Beepy</string>
+    <string name="app_name" translatable="false">Beepy</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="choose_table">Choisissez votre table</string>
-    <string name="select">Sélectionner</string>
+    <string name="choose_table">Select your table</string>
+    <string name="select">Select</string>
+    <string name="ask_for_waiter">Ask for waiter</string>
+    <string name="your_bill">Your bill:</string>
+    <string name="bill_total">Total: 0.00</string>
+    <string name="restaurant_select">Select</string>
+    <string name="food_icon">Useless but beautiful icon of a fork and a knife</string>
+    <string name="food_name">Item\'s name</string>
+    <string name="food_price">Price</string>
 </resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Beepy Waiters</string>
+    <string name="submit">Soumettre</string>
+    <string name="restaurant_choice">Choisissez votre restaurant</string>
+    <string name="select">Sélectionner</string>
+    <string name="food_icon">Icone inutile mais jolie d\'un couteau et d\'une fourchette</string>
+    <string name="food_name">Nom du plat</string>
+    <string name="food_price">Prix</string>
+    <string name="food_delete">Retirer le produit de la note</string>
+    <string name="waiter_answer_call">Répondre à l\'appel</string>
+    <string name="ordered_items">Produits commandés</string>
+    <string name="food_name_hint">Nom</string>
+    <string name="food_price_hint">Prix en €</string>
+    <string name="bill_total">Total : 0.00</string>
+    <string name="table_select">Sélectionner</string>
+</resources>

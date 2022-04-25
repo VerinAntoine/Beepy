@@ -23,6 +23,6 @@
         android:background="@drawable/rounded_button"
         android:visibility="invisible"
         android:theme="@style/Beepy.button"
-        android:text="Selectionner" />
+        android:text="@string/restaurant_select" />
 
 </RelativeLayout>

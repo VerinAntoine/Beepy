@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Beepy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="choose_table">Choisissez votre table</string>
+    <string name="select">Sélectionner</string>
+    <string name="ask_for_waiter">Allô, serveur ?</string>
+    <string name="your_bill">Votre note :</string>
+    <string name="bill_total">Total : 0.00</string>
+    <string name="restaurant_select">Sélectionner</string>
+    <string name="food_icon">Icone inutile mais jolie d\'un couteau et d\'une fourchette</string>
+    <string name="food_name">Nom du plat</string>
+    <string name="food_price">Prix</string>
+</resources>
