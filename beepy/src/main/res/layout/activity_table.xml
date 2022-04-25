@@ -4,22 +4,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:theme="@style/Theme.Beepy"
     tools:context=".TableActivity">
 
     <TextView
         android:id="@+id/table_restaurant"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:theme="@style/Beepy.title" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Choisissez votre table" />
+        android:text="@string/choose_table"
+        android:theme="@style/Beepy.subtitle"
+        android:layout_marginVertical="25dp" />
 
-    <LinearLayout
-        android:id="@+id/table_list"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/table_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:orientation="vertical" />
+    </ScrollView>
+
 
 </LinearLayout>

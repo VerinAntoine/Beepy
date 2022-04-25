@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingHorizontal="20dp"
+    android:background="@drawable/border" >
 
     <TextView
         android:id="@+id/table_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/teal_200"/>
-
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:layout_weight="60" />
     <Button
         android:id="@+id/table_select"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Selectionner" />
+        android:theme="@style/Beepy.button"
+        android:background="@drawable/rounded_button"
+        android:layout_alignParentRight="true"
+        android:width="120dp"
+        android:height="5dp"
+        android:layout_marginHorizontal="5dp"
+        android:textSize="13dp"
+        android:text="Sélectionner" />
 
 </LinearLayout>

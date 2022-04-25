@@ -4,6 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:theme="@style/Theme.Beepy"
+    android:gravity="center"
     tools:context=".TableActivity">
 
     <Button
@@ -11,6 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:theme="@style/Theme.Beepy"
+        android:background="@drawable/rounded_button"
         android:text="Répondre à l'appel"
         android:textSize="25sp"
         android:layout_marginVertical="40dp" />
