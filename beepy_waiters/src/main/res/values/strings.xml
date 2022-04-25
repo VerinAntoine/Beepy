@@ -1,3 +1,7 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Beepy Waiters</string>
+    <string name="call_answer">Répondre à l\'appel</string>
+    <string name="submit">Soumettre</string>
+    <string name="restaurant_choice">Choisissez votre restaurant</string>
+    <string name="select" tools:ignore="ExtraTranslation">Sélectionner</string>
 </resources>

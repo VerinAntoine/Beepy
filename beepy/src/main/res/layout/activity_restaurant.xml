@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:visibility="invisible">
+    android:theme="@style/Theme.Beepy"
+    android:layout_gravity="center_horizontal"
+    tools:visibility="invisible" >
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/restaurant_map"
@@ -15,13 +17,12 @@
         android:id="@+id/restaurant_select"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="103dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/rounded_button"
         android:visibility="invisible"
+        android:theme="@style/Beepy.button"
         android:text="Selectionner" />
 
 </RelativeLayout>

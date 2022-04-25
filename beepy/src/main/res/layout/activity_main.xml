@@ -4,29 +4,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:theme="@style/Theme.Beepy"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/main_restaurant"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:theme="@style/Beepy.title"
+        android:layout_marginTop="25dp" />
 
     <TextView
         android:id="@+id/main_table"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:theme="@style/Beepy.subtitle"
+        android:layout_marginVertical="25dp" />
 
     <Button
         android:id="@+id/main_button_waiter"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="35sp"
-        android:layout_marginHorizontal="30dp"
-        android:text="Ask for Waiter" />
-
+        android:text="Ask for Waiter"
+        android:theme="@style/Beepy.ChosingButton"
+        android:background="@drawable/rounded_button"
+        android:layout_marginVertical="25dp" />
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Your bill:"
         android:gravity="center"
@@ -37,7 +42,7 @@
     <ScrollView
         android:id="@+id/table_bill_scrollview"
         android:layout_width="match_parent"
-        android:layout_height="300dp">
+        android:layout_height="200dp">
 
         <LinearLayout
             android:id="@+id/food_order_layout"
