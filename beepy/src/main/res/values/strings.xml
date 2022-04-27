@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name" translatable="false">Beepy</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="choose_table">Select your table</string>
     <string name="select">Select</string>
     <string name="ask_for_waiter">Ask for waiter</string>
