@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#BEBEBE</color>
     <color name="light_red">#FBB3BD</color>
+    <color name="waiting_table_color">#f7ccc3</color>
+    <color name="not_waiting_table_color">#e1e0df</color>
 </resources>

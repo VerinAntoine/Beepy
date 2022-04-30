@@ -6,6 +6,11 @@
     android:paddingHorizontal="20dp"
     android:background="@drawable/border" >
 
+    <ImageView
+        android:id="@+id/table_state_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
     <TextView
         android:id="@+id/table_name"
         android:layout_width="0dp"
@@ -13,6 +18,7 @@
         android:textAlignment="center"
         android:textSize="16sp"
         android:layout_weight="60" />
+
     <Button
         android:id="@+id/table_select"
         android:layout_width="wrap_content"
