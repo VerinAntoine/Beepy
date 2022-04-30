@@ -2,13 +2,16 @@ package uqac.dim.beepy_waiters;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.annotation.ColorInt;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -52,6 +55,14 @@ public class MainActivity extends AppCompatActivity {
 
                             ((TextView) view.findViewById(R.id.table_name)).setText(table.getName());
                             view.findViewById(R.id.table_select).setOnClickListener(v -> onTableSelected(table));
+
+                            view.setBackgroundColor(table.isCalled() ?
+                                getResources().getColor(R.color.waiting_table_color, null) :
+                                getResources().getColor(R.color.not_waiting_table_color, null));
+
+                            ((ImageView)view.findViewById(R.id.table_state_icon)).setImageResource(table.isCalled() ?
+                                R.mipmap.waiting_table_icon_foreground :
+                                R.mipmap.not_waiting_table_icon_foreground);
 
                             layout.addView(view);
                         }

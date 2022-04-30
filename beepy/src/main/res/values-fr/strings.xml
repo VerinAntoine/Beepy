@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name" translatable="false">Beepy</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="choose_table">Choisissez votre table</string>
     <string name="select">Sélectionner</string>
     <string name="ask_for_waiter">Allô, serveur ?</string>
