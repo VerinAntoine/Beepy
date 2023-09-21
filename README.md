@@ -1,5 +1,5 @@
 # Beepy
-Beepy is a [UQAC](uqac.ca) [8INF257](https://programmes.uqac.ca/8INF257) project.
+Beepy is a [UQAC](https://uqac.ca) [8INF257](https://programmes.uqac.ca/8INF257) project.
 
 ## Objectives
 Beepy is an Android application wich can be used in restaurant by either client, and waiters.
